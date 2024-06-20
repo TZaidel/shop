@@ -1,7 +1,9 @@
+import Header from '../../components/Header/Header';
+
 export default function RegisterPage() {
   return (
     <>
-      <h1>RegisterPage</h1>
+      <Header />
     </>
   );
 }
