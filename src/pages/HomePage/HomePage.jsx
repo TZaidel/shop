@@ -1,18 +1,15 @@
-import Header from '../../components/Header/Header';
-import Hero from '../../components/Hero/Hero';
-import ProductList from '../../components/ProductList/ProductList';
-import Footer from '../../components/Footer/Footer';
+import Header from '../../components/Header/Header.jsx';
+import Hero from '../../components/Hero/Hero.jsx';
+import Footer from '../../components/Footer/Footer.jsx';
 
 import baseStyle from '../Base.module.css';
 
 export default function HomePage() {
   return (
     <div className={baseStyle.container}>
-      <Header />
-      <h1>Home Page</h1>
+      <Header/>
       <Hero />
-      <ProductList />
-      <Footer />
+      <Footer/>
     </div>
   );
 }

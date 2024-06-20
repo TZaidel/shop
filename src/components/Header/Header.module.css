@@ -1,13 +1,60 @@
-.nav {
-  width: 30%;
-  margin-left: auto;
-  margin-right: auto;
+.headerContainer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  padding: 40px 60px 31px 40px;
+  background-color: white;
+  width: 1920px;
+  height: 132px;
 }
-
-.active {
-  color: red;
-  padding-bottom: 5px;
-  border-bottom: 2px solid red;
+.logo {
+  font: Kulim Park;
+  font-weight: 700;
+  font-size: 36px;
+  width: fit-content;
+  align-content: center;
+}
+.headerContainerLinks {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin-left: 140px;
+  padding: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  opacity: 0px;
+}
+.headerContainerLinksItem {
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  font-family: Kulim Park;
+  font-size: 18px;
+  font-weight: 400;
+}
+.headerContainerIcons {
+  display: flex;
+  flex-direction: row;
+  width: 204px;
+  margin-left: 686px;
+  padding: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.IconsToNav {
+  width: 30px;
+  height: 36px;
+}
+.IconVector {
+  display: inline-flex;
+  align-items: center;
+}
+.IconVector::after {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 40px;
+  background-color: rgba(217, 217, 217, 1);
+  margin-left: 10px;
 }

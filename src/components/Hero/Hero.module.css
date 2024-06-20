@@ -1,0 +1,40 @@
+.HeroPictures {
+  position: relative;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+.folkWearPicture {
+  margin-right: 4px;
+  padding-bottom: 0;
+  width: 950px;
+  height: 948px;
+  border-spacing: 0;
+
+  gap: 0px;
+  opacity: 0px;
+}
+.forWomenText {
+  z-index: 2;
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  font-family: Kyiv * Type Serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 81.6px;
+  text-align: left;
+  color: white;
+}
+.forMenText {
+  z-index: 2;
+  position: absolute;
+  bottom: 30px;
+  right: 60px;
+  font-family: Kyiv * Type Serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 81.6px;
+  text-align: left;
+  color: white;
+}
