@@ -1,58 +1,76 @@
 .headerContainer {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  background-color: white;
   width: 100%;
   height: 132px;
-  padding: 0 50px 0 50px;
+  padding: 0 30px 0 30px;
 }
+
+.wrapperForNav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo {
-  font: Kulim Park;
+  font-family: 'Kulim Park', sans-serif;
   font-weight: 700;
   font-size: 36px;
-  width: fit-content;
-  align-content: center;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color: #000;
 }
-.headerContainerLinks {
+
+.navList {
   display: flex;
+  gap: 15px;
   flex-direction: row;
-  width: fit-content;
-  padding: auto;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-  opacity: 0px;
+  margin-left: 90px;
 }
-.headerContainerLinksItem {
-  justify-content: center;
-  align-items: center;
-  padding: auto;
-  font-family: Kulim Park;
-  font-size: 18px;
+
+.navItem {
+  font-family: 'Kulim Park', sans-serif;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color: #000;
 }
-.headerContainerIcons {
+
+.listIcons {
+  width: 204px;
+  height: 40px;
   display: flex;
   flex-direction: row;
-  width: 204px;
-  justify-content: center;
   align-items: center;
-  gap: 35px;
+  justify-content: center;
 }
+
+.itemIconSearch {
+  margin: 0 35px 0 0;
+}
+
+.itemIconUser {
+  margin: 0 0 0 38px;
+}
+
+.itemIconBasket {
+  margin: 0 0 0 33px;
+}
+
 .IconsToNav {
   width: 30px;
   height: 36px;
 }
-.IconVector {
-  display: inline-flex;
-  align-items: center;
-}
-.IconVector::after {
-  content: '';
-  display: block;
+
+.vector {
   width: 2px;
   height: 40px;
-  background-color: rgba(217, 217, 217, 1);
-  margin-left: 10px;
+  background-color: #d9d9d9;
 }
