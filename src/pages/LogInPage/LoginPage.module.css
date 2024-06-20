@@ -3,13 +3,13 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+  margin: 117px 0 0 0;
 }
 
 .wraperFormAuth {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
   margin-right: 177px;
 }
 
@@ -76,7 +76,6 @@
 .boxNavToRegister {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   margin-left: 56px;
 }
 

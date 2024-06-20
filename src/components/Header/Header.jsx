@@ -1,44 +1,44 @@
-/*import clsx from 'clsx';*/
-/*import { NavLink } from 'react-router-dom';*/
 import styles from './Header.module.css';
-// import { IoSearchSharp } from "react-icons/io5";
-// import { GoPerson } from "react-icons/go";
-// import { BsBasket3 } from "react-icons/bs";
+import { IoSearchSharp } from 'react-icons/io5';
+import { GoPerson } from 'react-icons/go';
+import { BsBasket3 } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 export default function Header() {
-/*  const linkClass = ({ isActive }) =>
-  {
-    return clsx(css.link, isActive && css.active);
-  }; {
-    return (
-      <section>
-        <nav className={css.nav}>
-          <NavLink to="/" className={linkClass}>
-            Home
-          </NavLink>
-          <NavLink to="/cart" className={linkClass}>
-            Cart
-          </NavLink>
-        </nav>
-      </section>
-    );
-  }*/
   return (
     <section className={styles.headerContainer}>
-      <h1 className={styles.logo}>UA TRADITIONS
-      </h1>
-      <ul className={styles.headerContainerLinks}>
-        <li className={styles.headerContainerLinksItem}>ЖІНКАМ</li>
-        <li className={styles.headerContainerLinksItem}>ЧОЛОВІКАМ</li>
-        <li className={styles.headerContainerLinksItem}>ЗНИЖКИ</li>
-        <li className={styles.headerContainerLinksItem}>ТВОЇ БАЛИ</li>
-      </ul>
-      <ul className={styles.headerContainerIcons}>
-        {/* <li className={styles.IconVector}><IoSearchSharp className={styles.IconsToNav}/></li> */}
-        {/* <li ><GoPerson className={styles.IconsToNav}/></li> */}
-        {/* <li ><BsBasket3 className={styles.IconsToNav}/></li> */}
-      </ul>
+      <div className={styles.wrapperForNav}>
+        <h1 className={styles.logo}>UA TRADITIONS</h1>
+        <ul className={styles.navList}>
+          <li className={styles.navItem}>
+            <Link>ЖІНКАМ</Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link>ЧОЛОВІКАМ</Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link>ЗНИЖКИ</Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link>ТВОЇ БАЛИ</Link>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul className={styles.listIcons}>
+          <li className={styles.itemIconSearch}>
+            <IoSearchSharp className={styles.IconsToNav} />
+          </li>
+          <li>
+            <div className={styles.vector}></div>
+          </li>
+          <li className={styles.itemIconUser}>
+            <GoPerson className={styles.IconsToNav} />
+          </li>
+          <li className={styles.itemIconBasket}>
+            <BsBasket3 className={styles.IconsToNav} />
+          </li>
+        </ul>
+      </div>
     </section>
-  )
+  );
 }
-
-
