@@ -1,12 +1,15 @@
-import Hero from '../../components/Hero/Hero';
-import ProductList from '../../components/Hero/ProductList/ProductList';
-import Footer from '../../components/Hero/Footer/Footer';
+import Header from '../../components/Header/Header.jsx';
+import Hero from '../../components/Hero/Hero.jsx';
+import ProductList from '../../components/ProductList/ProductList.jsx';
+import Footer from '../../components/Footer/Footer.jsx';
+
 
 export default function HomePage() {
   return (
     <div>
+      <Header/>
       <Hero />
-      <ProductList />
+      
       <Footer/>
       
     </div>

@@ -1,0 +1,64 @@
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 32px 16px 0 16px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 60px;
+  padding-bottom: 31px;
+  background-color: white;
+  width: 1920px;
+  height: 132px;
+}
+.logo {
+  font: Kulim Park;
+  font-weight: 700;
+  font-size: 36px;
+  width: fit-content;
+  align-content: center;
+}
+.headerContainerLinks {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin-left: 140px;
+  padding: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  opacity: 0px;
+}
+.headerContainerLinksItem {
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  font-family: Kulim Park;
+  font-size: 18px;
+  font-weight: 400;
+}
+.headerContainerIcons {
+  display: flex;
+  flex-direction: row;
+  width: 204px;
+  margin-left: 686px;
+  padding: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.IconsToNav {
+  width: 30px;
+  height: 36px;
+}
+.IconVector {
+  display: inline-flex;
+  align-items: center;
+}
+.IconVector::after {
+  content: '';
+  display: block;
+  width: 2px;
+  height: 40px;
+  background-color: rgba(217, 217, 217, 1);
+  margin-left: 10px;
+}
