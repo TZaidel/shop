@@ -1,0 +1,127 @@
+.boxForWrappers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.wraperFormAuth {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 177px;
+}
+
+.rectigleStyles {
+  width: 1px;
+  height: 472px;
+  background: #d9d9d9;
+}
+
+.titleLogin {
+  font-family: 'Kyiv*Type Serif', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 56px;
+}
+
+.registerText {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 2.7;
+  color: #131415;
+  margin-bottom: 9px;
+}
+
+.navLinkRegister {
+  border: 1px solid #c7031b;
+  border-radius: 10px;
+  padding: 16px 20px;
+  width: 520px;
+  height: 66px;
+  font-family: 'Kyiv*Type Serif', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+}
+
+.inputStyles {
+  border: 1px solid #969696;
+  border-radius: 14px;
+  padding: 18px 16px;
+  width: 426px;
+  height: 63px;
+  font-family: 'Kyiv*Type Serif', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.7;
+  text-transform: capitalize;
+  color: #969696;
+}
+
+.boxInputs {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+
+.boxNavToRegister {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 56px;
+}
+
+.boxCheckboxAndLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.restorationLink {
+  margin-left: 59px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 3.6;
+  color: #c7031b;
+}
+
+.buttonLogin {
+  font-family: 'Kyiv*Type Serif', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.7;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(192, 33, 33, 0.68);
+  border-radius: 10px;
+  padding: 16px 20px;
+  width: 423px;
+  height: 59px;
+  border: none;
+}
+
+.textRememberData {
+  margin-left: 7px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 3.6;
+  color: #131415;
+}
+
+.boxLabel {
+  display: flex;
+  flex-direction: row;
+}
