@@ -1,7 +1,10 @@
+import styles from "./Footer.module.css"
 export default function Footer() {
   return (
-    <section>
-      <p> Footer info </p>
+    <section className={styles.footerSection}>
+     <p >UA TRADITIONS
+      </p>
+   
     </section>
-  );
+  )
 }
