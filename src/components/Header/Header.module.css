@@ -27,11 +27,11 @@
 
 .navList {
   display: flex;
-  gap: 15px;
+  gap: 40px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-left: 90px;
+  margin-left: 120px;
 }
 
 .navItem {
