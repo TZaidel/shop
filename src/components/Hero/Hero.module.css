@@ -1,40 +1,34 @@
-.HeroPictures {
+.list {
   position: relative;
-  width: fit-content;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
-.folkWearPicture {
-  margin-right: 4px;
-  padding-bottom: 0;
-  width: 950px;
-  height: 948px;
-  border-spacing: 0;
 
-  gap: 0px;
-  opacity: 0px;
+.item {
+  width: calc((100% - 10px) / 2);
 }
-.forWomenText {
+
+.image {
+  object-fit: contain;
+  width: 100%;
+}
+
+.title {
   z-index: 2;
   position: absolute;
+  font-family: Kyiv;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.7;
+  color: var(--white);
+}
+
+.womanTitle {
   top: 30px;
-  left: 60px;
-  font-family: Kyiv * Type Serif;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 81.6px;
-  text-align: left;
-  color: white;
+  left: 30px;
 }
-.forMenText {
-  z-index: 2;
-  position: absolute;
+
+.menTitle {
   bottom: 30px;
-  right: 60px;
-  font-family: Kyiv * Type Serif;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 81.6px;
-  text-align: left;
-  color: white;
+  right: 30px;
 }

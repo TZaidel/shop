@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import notFoundImg from '../../public/images/notFound.png'
+import notFoundImg from '../../../public/images/notFound.png'
 
 import baseStyle from '../Base.module.css';
 import css from './NotFoundPage.module.css'
