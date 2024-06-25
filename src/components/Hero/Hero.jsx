@@ -2,20 +2,20 @@ import styles from '../Hero/Hero.module.css';
 export default function Hero() {
   return (
     <section className={styles.HeroSection}>
-      <ul className={styles.HeroPictures}>
-        <li>
-          <p className={styles.forWomenText}>ЖІНКАМ</p>
+      <ul className={styles.list}>
+        <li className={styles.item}>
+          <p className={`${styles.title} ${styles.womanTitle}`}>ЖІНКАМ</p>
           <img
-            className={styles.folkWearPicture}
-            srcSet="../src/assets/Pictures/ForWomen.jpg"
+            className={styles.image}
+            srcSet="../../../public/images/hero/forWomen.jpg"
             alt="Ukrainian woman in folk dress"
           />
         </li>
-        <li>
-          <p className={styles.forMenText}>ЧОЛОВІКАМ</p>
+        <li className={styles.item}>
+          <p className={`${styles.title} ${styles.menTitle}`}>ЧОЛОВІКАМ</p>
           <img
-            className={styles.folkWearPicture}
-            srcSet="../src/assets/Pictures/Smiley_man_holding_hanger.jpg"
+            className={styles.image}
+            srcSet="../../../public/images/hero/forMan.jpg"
             alt="Ukrainian man in folk dress"
           />
         </li>

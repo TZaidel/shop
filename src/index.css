@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Kyiv';
-  src: url('../src/assets/fonts/Kyiv.otf');
+  src: url('../src/assets/fonts/Kyiv.ttf');
 }
 
 :root {
@@ -26,7 +26,6 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  line-height: 0;
 }
 
 button {
