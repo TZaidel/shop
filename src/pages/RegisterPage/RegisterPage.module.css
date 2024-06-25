@@ -30,7 +30,21 @@
   line-height: 1.7;
   text-transform: uppercase;
   color: #000;
-  margin-bottom: 34px;
+  margin-bottom: 26px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .titleregister {
+    font-size: 36px;
+    margin-bottom: 26px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .titleregister {
+    font-size: 48px;
+    margin-bottom: 34px;
+  }
 }
 
 .wrapperForm {
@@ -42,11 +56,31 @@
 }
 
 .inputsStyle {
-  border: 1px solid #969696;
-  border-radius: 14px;
-  padding: 18px 16px;
-  width: 420px;
-  height: 63px;
+  border: 0.75px solid #969696;
+  border-radius: 10px;
+  padding: 14px 12px;
+  width: 315px;
+  height: 48px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .inputsStyle {
+    border: 0.75px solid #969696;
+    border-radius: 10px;
+    padding: 14px 12px;
+    width: 315px;
+    height: 48px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .inputsStyle {
+    border: 1px solid #969696;
+    border-radius: 14px;
+    padding: 18px 16px;
+    width: 420px;
+    height: 63px;
+  }
 }
 
 .listInputsLeft {
@@ -73,26 +107,66 @@
 .textagree {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 3.6;
+  font-size: 10px;
+  line-height: 4.05;
   color: #131415;
   margin: 10px 0 0 7px;
 }
 
+@media only screen and (min-width: 1440px) {
+  .textagree {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 4.05;
+    color: #131415;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .textagree {
+    font-size: 15px;
+    line-height: 3.6;
+  }
+}
+
 .registerButton {
-  border-radius: 10px;
+  border-radius: 7px;
   border: none;
-  padding: 16px 20px;
-  width: 582px;
-  height: 73px;
+  padding: 12px 15px;
+  width: 436px;
+  height: 55px;
   background-color: rgba(192, 33, 33, 0.68);
   font-family: 'Kyiv*Type Serif', sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.7;
   text-transform: uppercase;
   color: #fff;
   margin-top: 50px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .registerButton {
+    border-radius: 7px;
+    padding: 12px 15px;
+    width: 436px;
+    height: 55px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 36px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .registerButton {
+    border-radius: 10px;
+    padding: 16px 20px;
+    width: 582px;
+    height: 73px;
+    font-size: 24px;
+    margin-top: 50px;
+  }
 }
 
 .boxLabelAndButton {

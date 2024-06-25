@@ -26,16 +26,44 @@
   line-height: 1.7;
   text-transform: uppercase;
   color: #000;
-  margin-bottom: 56px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .titleLogin {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .titleLogin {
+    font-size: 48px;
+    margin-bottom: 56px;
+  }
 }
 
 .registerText {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 2.7;
   color: #131415;
   margin-bottom: 9px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .registerText {
+    font-size: 16px;
+    margin-bottom: 9px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .registerText {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
 }
 
 .navLinkRegister {
@@ -53,18 +81,54 @@
   text-align: center;
 }
 
+@media only screen and (min-width: 1440px) {
+  .navLinkRegister {
+    width: 400px;
+    height: 59px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .navLinkRegister {
+    width: 520px;
+    height: 66px;
+    font-size: 20px;
+  }
+}
+
 .inputStyles {
   border: 1px solid #969696;
   border-radius: 14px;
-  padding: 18px 16px;
-  width: 426px;
-  height: 63px;
+  padding: 12px 16px;
+  width: 320px;
+  height: 48px;
   font-family: 'Kyiv*Type Serif', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.7;
   text-transform: capitalize;
   color: #969696;
+}
+
+@media only screen and (min-width: 1440px) {
+  .inputStyles {
+    border: 1px solid #969696;
+    border-radius: 14px;
+    padding: 12px 16px;
+    width: 320px;
+    height: 48px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .inputStyles {
+    border: 1px solid #969696;
+    border-radius: 14px;
+    padding: 18px 16px;
+    width: 426px;
+    height: 63px;
+  }
 }
 
 .boxInputs {
@@ -85,15 +149,42 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+  width: 320px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .boxCheckboxAndLink {
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .boxCheckboxAndLink {
+    width: 426px;
+  }
 }
 
 .restorationLink {
-  margin-left: 59px;
+  margin-left: 44px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 15px;
   line-height: 3.6;
   color: #c7031b;
+}
+
+@media only screen and (min-width: 1440px) {
+  .restorationLink {
+    margin-left: 44px;
+    font-size: 11px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .restorationLink {
+    margin-left: 59px;
+    font-size: 15px;
+  }
 }
 
 .buttonLogin {
@@ -112,12 +203,26 @@
 }
 
 .textRememberData {
-  margin-left: 7px;
+  margin-left: 5px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 11px;
   line-height: 3.6;
   color: #131415;
+}
+
+@media only screen and (min-width: 1440px) {
+  .textRememberData {
+    margin-left: 5px;
+    font-size: 11px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .textRememberData {
+    margin-left: 7px;
+    font-size: 15px;
+  }
 }
 
 .boxLabel {
