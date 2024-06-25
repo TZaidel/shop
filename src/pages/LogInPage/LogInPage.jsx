@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import Header from '../../components/Header/Header';
 import styles from './LoginPage.module.css';
 import baseStyle from '../Base.module.css';
+import Header from '../../components/Header/Header.jsx';
 
 export default function LogInPage() {
   return (
