@@ -1,41 +1,53 @@
-import styles from './Header.module.css';
+import clsx from 'clsx'
 import { IoSearchSharp } from 'react-icons/io5';
 import { GoPerson } from 'react-icons/go';
 import { BsBasket3 } from 'react-icons/bs';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+
+import styles from './Header.module.css';
+
 export default function Header() {
+  const linkClass = ({ isActive }) => {
+    return clsx(styles.navItem, isActive && styles.active);
+  }
   return (
     <section className={styles.headerContainer}>
       <div className={styles.wrapperForNav}>
         <h1 className={styles.logo}>UA TRADITIONS</h1>
-        <ul className={styles.navList}>
-          <li className={styles.navItem}>
-            <Link>ЖІНКАМ</Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link>ЧОЛОВІКАМ</Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link>ЗНИЖКИ</Link>
-          </li>
-          <li className={styles.navItem}>
-            <Link>ТВОЇ БАЛИ</Link>
-          </li>
-        </ul>
+        <nav className={styles.navList}>
+          <NavLink to="/catalog" className={linkClass}>
+            ЖІНКАМ
+          </NavLink>
+          <NavLink to="/catalog" className={linkClass}>
+            ЧОЛОВІКАМ
+          </NavLink>
+          <NavLink to="/" className={linkClass}>
+            ЗНИЖКИ
+          </NavLink>
+          <NavLink to="/" className={linkClass}>
+            ТВОЇ БАЛИ
+          </NavLink>
+        </nav>
       </div>
       <div>
         <ul className={styles.listIcons}>
           <li className={styles.itemIconSearch}>
-            <IoSearchSharp className={styles.IconsToNav} />
+            <Link to="/">
+              <IoSearchSharp className={styles.IconsToNav} />
+            </Link>
           </li>
           <li>
             <div className={styles.vector}></div>
           </li>
           <li className={styles.itemIconUser}>
-            <GoPerson className={styles.IconsToNav} />
+            <Link to="/login">
+              <GoPerson className={styles.IconsToNav} />
+            </Link>
           </li>
           <li className={styles.itemIconBasket}>
-            <BsBasket3 className={styles.IconsToNav} />
+            <Link to="/cart">
+              <BsBasket3 className={styles.IconsToNav} />
+            </Link>
           </li>
         </ul>
       </div>

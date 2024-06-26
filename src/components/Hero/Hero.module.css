@@ -16,11 +16,10 @@
 .title {
   z-index: 2;
   position: absolute;
-  font-family: Kyiv;
   font-size: 48px;
   font-weight: 700;
   line-height: 1.7;
-  color: var(--white);
+  color: var(--white-color);
 }
 
 .womanTitle {

@@ -2,16 +2,16 @@
   position: absolute;
   left: 0;
   right: 0;
+  /* bottom: 0; */
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #1a1b1c;
-  color: var(--white);
+  color: var(--white-color);
   padding: 40px 0;
 }
 
 .footerSection p {
-  font-family: Kulim Park;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.7;

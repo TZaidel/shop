@@ -1,0 +1,27 @@
+.item {
+  width: 400px;
+  height: 782px;
+  background-color: gray;
+  overflow: hidden;
+
+}
+
+.image{
+  height: 670px;
+    object-fit: contain;
+    object-position: center;
+
+}
+
+.title,
+.price {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 2.7;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-bottom: 10px;
+  margin-top: 18px;
+}
