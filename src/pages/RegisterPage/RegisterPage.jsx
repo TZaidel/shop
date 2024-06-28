@@ -92,7 +92,9 @@ export default function RegisterPage() {
                 конфіденційності
               </p>
             </label>
-            <button className={styles.registerButton}>зареєструватися</button>
+            <button className={styles.registerButton} type="submit">
+              зареєструватися
+            </button>
           </div>
         </form>
         <div className={styles.boxForImageRight}></div>

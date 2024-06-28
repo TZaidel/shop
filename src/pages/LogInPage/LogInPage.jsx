@@ -48,10 +48,10 @@ export default function LogInPage() {
                   Забули пароль?
                 </Link>
               </div>
+              <button className={styles.buttonLogin} type="submit">
+                увійти до особистого кабінету
+              </button>
             </form>
-            <button className={styles.buttonLogin}>
-              увійти до особистого кабінету
-            </button>
           </div>
           <div className={styles.rectigleStyles}></div>
           <div className={styles.boxNavToRegister}>
