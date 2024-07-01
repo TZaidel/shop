@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import styles from './LoginPage.module.css';
 import baseStyle from '../Base.module.css';
 import Header from '../../components/Header/Header.jsx';
+import Footer from '../../components/Footer/Footer.jsx';
 import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
 import { loginThunk } from '../../redux/auth/operations.js';
@@ -65,6 +66,7 @@ export default function LogInPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

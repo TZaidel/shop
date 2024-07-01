@@ -3,6 +3,7 @@ import styles from './RegisterPage.module.css';
 import { useForm } from 'react-hook-form';
 import { registerThunk } from '../../redux/auth/operations';
 import { useDispatch } from 'react-redux';
+import Footer from '../../components/Footer/Footer';
 
 export default function RegisterPage() {
   const { register, reset, handleSubmit } = useForm();
@@ -99,6 +100,7 @@ export default function RegisterPage() {
         </form>
         <div className={styles.boxForImageRight}></div>
       </div>
+      <Footer />
     </>
   );
 }
