@@ -1,11 +1,14 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { api, clearToken, setToken } from '../../api/api';
+import { clearToken, setToken } from '../../api/api';
+import axios from 'axios';
+
+axios.defaults.baseURL = 'http://176.37.226.184:8009';
 
 export const registerThunk = createAsyncThunk(
   'register',
   async (credentials, thunkAPI) => {
     try {
-      await api.post('/auth/register', credentials);
+      await axios.post('/api/register', credentials);
     } catch (error) {
       if (error.request.status === 409) {
         return thunkAPI.rejectWithValue('Email is already in use.');
@@ -20,7 +23,7 @@ export const loginThunk = createAsyncThunk(
   'login',
   async (credentials, thunkAPI) => {
     try {
-      const response = await api.post('/auth/login', credentials);
+      const response = await axios.post('/api/login', credentials);
       setToken(response.data.accessToken);
       return response.data;
     } catch (error) {
@@ -44,7 +47,7 @@ export const refreshThunk = createAsyncThunk('refresh', async (_, thunkAPI) => {
   }
 
   try {
-    const { data } = await api.post('/auth/refresh', { refreshToken });
+    const { data } = await axios.post('/api/refresh', { refreshToken });
     setToken(data.accessToken);
     return data;
   } catch (error) {
@@ -56,7 +59,7 @@ export const logoutThunk = createAsyncThunk(
   'logout',
   async (refreshToken, thunkAPI) => {
     try {
-      await api.post('/auth/logout', refreshToken);
+      await axios.post('/auth/logout', refreshToken);
       clearToken();
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
