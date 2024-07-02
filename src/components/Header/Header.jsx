@@ -1,5 +1,5 @@
-import clsx from 'clsx'
-import { IoSearchSharp } from 'react-icons/io5';
+import clsx from 'clsx';
+import { IoMenu, IoSearchSharp } from 'react-icons/io5';
 import { GoPerson } from 'react-icons/go';
 import { BsBasket3 } from 'react-icons/bs';
 import { Link, NavLink } from 'react-router-dom';
@@ -9,7 +9,7 @@ import styles from './Header.module.css';
 export default function Header() {
   const linkClass = ({ isActive }) => {
     return clsx(styles.navItem, isActive && styles.active);
-  }
+  };
   return (
     <section className={styles.headerContainer}>
       <div className={styles.wrapperForNav}>
@@ -50,6 +50,9 @@ export default function Header() {
             </Link>
           </li>
         </ul>
+        <button className={styles.burgerMenuButton}>
+          <IoMenu size="36px" className={styles.burgerMenuIcon} />
+        </button>
       </div>
     </section>
   );

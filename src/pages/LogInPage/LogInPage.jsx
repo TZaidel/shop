@@ -16,8 +16,8 @@ export default function LogInPage() {
   };
   return (
     <>
+      <Header />
       <div className={`${baseStyle.container}`}>
-        <Header />
         <div className={styles.boxForWrappers}>
           <div className={styles.wraperFormAuth}>
             <h2 className={styles.titleLogin}>ВХІД</h2>
@@ -55,8 +55,11 @@ export default function LogInPage() {
             </form>
           </div>
           <div className={styles.rectigleStyles}></div>
+          <div className={styles.mobileRectigleStyles}></div>
           <div className={styles.boxNavToRegister}>
-            <h2 className={styles.titleLogin}>ЗАРЕЄСТРУЙТЕСЯ ЗАРАЗ</h2>
+            <h2 className={styles.titleLoginPageRegister}>
+              ЗАРЕЄСТРУЙТЕСЯ ЗАРАЗ
+            </h2>
             <p className={styles.registerText}>
               Зареєструйтеся для оформлення замовлення
             </p>
