@@ -1,6 +1,9 @@
 .list {
   display: flex;
-  gap: 10px;
+  gap: 70px 46px;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 20px;
-  background-color: pink;
+  margin-top: 80px;
+  margin-bottom: 120px;
 }
