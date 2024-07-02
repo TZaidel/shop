@@ -19,7 +19,7 @@ export default function ProductList() {
     <section>
       <ul className={styles.list}>
         {items.map(item => (
-          <ProductItem key={item.id} items={items} />
+          <ProductItem key={item.id} item={item} />
         ))}
       </ul>
     </section>
