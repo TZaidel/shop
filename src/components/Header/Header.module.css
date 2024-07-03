@@ -6,11 +6,16 @@
   width: 100%;
   padding: 0 30px;
   border-bottom: 2px solid #d9d9d9;
-  
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1100px) {
   .headerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
     height: 120px;
   }
 }
@@ -30,17 +35,17 @@
 }
 
 .logo {
+  font-family: 'Kulim Park', sans-serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 20px;
   line-height: 1.7;
   text-transform: uppercase;
+  color: #000;
 }
 
 @media only screen and (min-width: 1440px) {
   .logo {
-    font-weight: 700;
     font-size: 32px;
-    line-height: 1.7;
   }
 }
 
@@ -51,6 +56,12 @@
   justify-content: center;
   align-items: center;
   margin-left: 120px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .navList {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -94,6 +105,12 @@
   justify-content: center;
 }
 
+@media only screen and (max-width: 1100px) {
+  .listIcons {
+    display: none;
+  }
+}
+
 .itemIconSearch {
   margin: 0 35px 0 0;
 }
@@ -119,4 +136,20 @@
 
 .active {
   color: var(--accent-color);
+}
+
+.burgerMenuButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  width: 36px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 1101px) {
+  .burgerMenuButton {
+    display: none;
+  }
 }

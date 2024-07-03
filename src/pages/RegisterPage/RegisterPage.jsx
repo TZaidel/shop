@@ -1,12 +1,28 @@
 import Header from '../../components/Header/Header';
 import styles from './RegisterPage.module.css';
 import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
 import { registerThunk } from '../../redux/auth/operations';
 import { useDispatch } from 'react-redux';
 import Footer from '../../components/Footer/Footer';
 
+const schema = yup.object().shape({
+  password: yup.string(),
+  confirmPassword: yup
+    .string()
+    .oneOf([yup.ref('password'), null], 'Паролі мають співпадати'),
+});
+
 export default function RegisterPage() {
-  const { register, reset, handleSubmit } = useForm();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
   const dispatch = useDispatch();
   const submit = data => {
     dispatch(registerThunk(data));
@@ -16,9 +32,9 @@ export default function RegisterPage() {
     <>
       <Header />
       <div className={styles.wraperRegisterPage}>
-        <h1 className={styles.titleregister}>РЕЄСТРАЦІЯ</h1>
         <div className={styles.boxForImageLeft}></div>
         <form className={styles.formStyles} onSubmit={handleSubmit(submit)}>
+          <h1 className={styles.titleregister}>РЕЄСТРАЦІЯ</h1>
           <div className={styles.wrapperForm}>
             <ul className={styles.listInputsLeft}>
               <li>
@@ -41,17 +57,6 @@ export default function RegisterPage() {
               </li>
               <li>
                 <input
-                  {...register('fathername')}
-                  type="text"
-                  required
-                  className={styles.inputsStyle}
-                  placeholder="по-батькові *"
-                />
-              </li>
-            </ul>
-            <ul className={styles.listInputsRight}>
-              <li>
-                <input
                   {...register('email')}
                   type="email"
                   required
@@ -59,10 +64,12 @@ export default function RegisterPage() {
                   placeholder="електронна пошта *"
                 />
               </li>
+            </ul>
+            <ul className={styles.listInputsRight}>
               <li>
                 <input
-                  {...register('number')}
-                  type="number"
+                  {...register('tel')}
+                  type="tel"
                   required
                   className={styles.inputsStyle}
                   placeholder="мобільний телефон *"
@@ -77,18 +84,30 @@ export default function RegisterPage() {
                   placeholder="пароль *"
                 />
               </li>
+              <li>
+                <input
+                  {...register('confirmPassword')}
+                  type="password"
+                  required
+                  className={styles.inputsStyle}
+                  placeholder="підтвердження паролю *"
+                />
+                {errors.confirmPassword && (
+                  <p>{errors.confirmPassword.message}</p>
+                )}
+              </li>
             </ul>
           </div>
           <div className={styles.boxLabelAndButton}>
             <label htmlFor="agree" className={styles.boxLabel}>
-              <input
-                type="checkbox"
-                id="agree"
-                name="agree"
-                required
-                className={styles.checkBoxRegister}
-              />
               <p className={styles.textagree}>
+                <input
+                  type="checkbox"
+                  id="agree"
+                  name="agree"
+                  required
+                  className={styles.checkBoxRegister}
+                />
                 Я погоджуюсь із Умовами надання послуг та Політикою
                 конфіденційності
               </p>
@@ -99,6 +118,7 @@ export default function RegisterPage() {
           </div>
         </form>
         <div className={styles.boxForImageRight}></div>
+        <div className={styles.boxForImageBottom}></div>
       </div>
       <Footer />
     </>

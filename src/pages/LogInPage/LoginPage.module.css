@@ -1,39 +1,69 @@
 .boxForWrappers {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 117px 0 0 0;
-  height: 100vh;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .boxForWrappers {
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .boxForWrappers {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 56px;
+  }
 }
 
 .wraperFormAuth {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-right: 177px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 1100px) {
+  .wraperFormAuth {
+    margin-right: 137px;
+  }
 }
 
 .rectigleStyles {
-  width: 1px;
-  height: 472px;
-  background: #d9d9d9;
+  display: none;
+}
+
+@media only screen and (min-width: 1100px) {
+  .rectigleStyles {
+    display: block;
+    width: 1px;
+    height: 354px;
+    background-color: #d9d9d9;
+  }
 }
 
 .titleLogin {
-  font-family: 'Kyiv*Type Serif', sans-serif;
-  font-weight: 700;
-  font-size: 48px;
+  font-family: 'Kulim Park', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
   line-height: 1.7;
   text-transform: uppercase;
   color: #000;
-  margin-bottom: 30px;
+  margin-top: 55px;
+  margin-bottom: 16px;
 }
 
 @media only screen and (min-width: 1440px) {
   .titleLogin {
     font-size: 36px;
     margin-bottom: 30px;
+    margin-top: 0;
   }
 }
 
@@ -68,11 +98,14 @@
 }
 
 .navLinkRegister {
-  border: 1px solid #c7031b;
-  border-radius: 10px;
-  padding: 16px 20px;
-  width: 520px;
-  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.79px solid #c7031b;
+  border-radius: 8px;
+  padding: 12px 15px;
+  width: 322px;
+  height: 46px;
   font-family: 'Kyiv*Type Serif', sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -114,11 +147,8 @@
 
 @media only screen and (min-width: 1440px) {
   .inputStyles {
-    border: 1px solid #969696;
-    border-radius: 14px;
-    padding: 12px 16px;
-    width: 320px;
-    height: 48px;
+    width: 380px;
+    height: 46px;
   }
 }
 
@@ -134,14 +164,34 @@
 
 .boxInputs {
   display: flex;
-  gap: 32px;
+  gap: 12px;
   flex-direction: column;
+  margin-bottom: 6px;
+}
+
+@media only screen and (min-width: 1100px) {
+  .boxInputs {
+    display: flex;
+    gap: 36px;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 }
 
 .boxNavToRegister {
   display: flex;
   flex-direction: column;
-  margin-left: 56px;
+  margin-bottom: 108px;
+  margin-top: 45px;
+}
+
+@media only screen and (min-width: 1100px) {
+  .boxNavToRegister {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 }
 
 .boxCheckboxAndLink {
@@ -196,11 +246,26 @@
   text-transform: uppercase;
   color: #fff;
   background-color: rgba(192, 33, 33, 0.68);
-  border-radius: 10px;
-  padding: 16px 20px;
-  width: 423px;
-  height: 59px;
+  border-radius: 8px;
+  padding: 13px 16px;
+  width: 322px;
+  height: 49px;
   border: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  .buttonLogin {
+    border-radius: 10px;
+    padding: 16px 20px;
+    width: 380px;
+    height: 59px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .buttonLogin {
+    width: 423px;
+  }
 }
 
 .textRememberData {
@@ -229,4 +294,16 @@
 .boxLabel {
   display: flex;
   flex-direction: row;
+}
+
+.mobileRectigleStyles {
+  width: 322px;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobileRectigleStyles {
+    display: none;
+  }
 }
