@@ -86,7 +86,7 @@ export default function RegisterPage() {
               </li>
               <li>
                 <input
-                  {...register('confirmPassword')}
+                  {...register('password_confirmation')}
                   type="password"
                   required
                   className={styles.inputsStyle}
