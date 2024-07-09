@@ -15,10 +15,10 @@ export default function Header() {
       <div className={styles.wrapperForNav}>
         <h1 className={styles.logo}>UA TRADITIONS</h1>
         <nav className={styles.navList}>
-          <NavLink to="/catalog" className={linkClass}>
+          <NavLink to="/catalog/female" className={linkClass}>
             ЖІНКАМ
           </NavLink>
-          <NavLink to="/catalog" className={linkClass}>
+          <NavLink to="/catalog/male" className={linkClass}>
             ЧОЛОВІКАМ
           </NavLink>
           <NavLink to="/" className={linkClass}>

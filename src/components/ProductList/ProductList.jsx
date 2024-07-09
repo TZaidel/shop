@@ -4,43 +4,28 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchProducts } from '../../redux/products/operations.js';
 import ProductItem from '../ProductItem/ProductItem';
 
+import css from '../Base.module.css';
 import styles from './ProductList.module.css';
 
-export default function ProductList() {
+export default function ProductList({ gender }) {
   const { items } = useSelector(state => state.products);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchProducts());
   }, [dispatch]);
-  console.log(items);
+
+  const filteredItems = items.filter(
+    item => item.gender === gender || item.gender === 'unisex'
+  );
 
   return (
-    <section>
+    <section className={css.container}>
       <ul className={styles.list}>
-        {items.map(item => (
+        {filteredItems.map(item => (
           <ProductItem key={item.id} item={item} />
         ))}
       </ul>
     </section>
   );
 }
-
-// const [items, setItems] = useState([]);
-
-//   axios.defaults.baseURL =
-//     'http://176.37.226.184:8009';
-
-// useEffect(() => {
-//   const fetchData = async () => {
-//     try {
-//       const response = await axios.get('/api/products')
-//       setItems(response.data.data)
-//       console.log(response.data)
-//     }
-//     catch (error) {
-//       console.log(error)
-//     }
-//   }
-//   fetchData()
-// }, [])

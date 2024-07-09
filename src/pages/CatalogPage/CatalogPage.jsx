@@ -1,14 +1,15 @@
+import { useParams } from 'react-router-dom';
 import Header from '../../components/Header/Header.jsx';
 import ProductList from '../../components/ProductList/ProductList.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
 
-import baseStyle from '../Base.module.css';
-
 export default function CatalogPage() {
+  const { gender } = useParams();
+
   return (
-    <div className={baseStyle.container}>
+    <div>
       <Header />
-      <ProductList/>
+      <ProductList gender={gender} />
       <Footer />
     </div>
   );
