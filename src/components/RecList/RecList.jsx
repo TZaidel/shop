@@ -1,13 +1,12 @@
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-
-import { fetchProducts } from '../../redux/products/operations.js';
+import { useSelector, useDispatch } from 'react-redux';
 import ProductItem from '../ProductItem/ProductItem';
+import { fetchProducts } from '../../redux/products/operations.js';
 
 import css from '../Base.module.css';
-import styles from './ProductList.module.css';
+import styles from './RecList.module.css';
 
-export default function ProductList({ gender }) {
+export default function RecList() {
   const { items } = useSelector(state => state.products);
   const dispatch = useDispatch();
 
@@ -15,14 +14,11 @@ export default function ProductList({ gender }) {
     dispatch(fetchProducts());
   }, [dispatch]);
 
-  const filteredItems = items.filter(
-    item => item.gender === gender || item.gender === 'unisex'
-  );
-
   return (
-    <section className={css.container}>
+    <section className={`${css.container} ${styles.container}`}>
+      <h2 className={styles.title}>Рекомедовані товари</h2>
       <ul className={styles.list}>
-        {filteredItems.map(item => (
+        {items.map(item => (
           <ProductItem key={item.id} item={item} />
         ))}
       </ul>
