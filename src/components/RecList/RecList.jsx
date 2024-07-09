@@ -17,7 +17,7 @@ export default function RecList() {
   return (
     <section className={`${css.container} ${styles.container}`}>
       <h2 className={styles.title}>Рекомедовані товари</h2>
-      <ul>
+      <ul className={styles.list}>
         {items.map(item => (
           <ProductItem key={item.id} item={item} />
         ))}

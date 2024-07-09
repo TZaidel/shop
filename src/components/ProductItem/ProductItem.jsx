@@ -24,10 +24,10 @@ export default function ProductItem({ item }) {
           <h2 className={styles.title}>{title}</h2>
           <p className={styles.price}>{item.price.old}₴</p>
         </div>
-        <button onClick={handleAdd} className={styles.addBtn}>
-          <svg width="20" height="20" className={styles.iconAdd}>
+        <button onClick={handleAdd} className={styles.addBtn}>+
+          {/* <svg width="20" height="20" className={styles.iconAdd}>
             <use xlinkHref={`${sprite}#icon-like`}></use>
-          </svg>
+          </svg> */}
         </button>
       </div>
     </li>

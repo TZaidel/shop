@@ -3,7 +3,7 @@
   height: 366px;
   overflow: hidden;
   position: relative;
-  background-color: rgb(243, 243, 246);
+  /* background-color: rgb(243, 243, 246); */
 }
 
 .iconLike {
@@ -45,7 +45,8 @@
 }
 
 .addBtn {
-  background-color: blue;
+  background-color: rgb(194, 194, 194);
+  border: none;
 }
 
 @media screen and (min-width: 768px) {
