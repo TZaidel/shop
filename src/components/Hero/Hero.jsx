@@ -1,7 +1,8 @@
 import styles from '../Hero/Hero.module.css';
+
 export default function Hero() {
   return (
-    <section className={styles.HeroSection}>
+    <section className={styles.section}>
       <ul className={styles.list}>
         <li className={styles.item}>
           <p className={`${styles.title} ${styles.womanTitle}`}>ЖІНКАМ</p>

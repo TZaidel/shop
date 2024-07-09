@@ -6,8 +6,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  row-gap: 40px;
-  column-gap: calc((100% - 300px) / 2);
+  gap: 40px calc(100% - 300px);
   margin: 26px 0 120px;
 }
 
