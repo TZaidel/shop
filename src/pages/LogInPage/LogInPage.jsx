@@ -54,6 +54,7 @@ export default function LogInPage() {
             </button>
           </form>
         </div>
+        <div className={styles.tabletRectigleStyles}></div>
         <div className={styles.rectigleStyles}></div>
         <div className={styles.mobileRectigleStyles}></div>
         <div className={styles.boxNavToRegister}>

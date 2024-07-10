@@ -10,8 +10,8 @@
 
 @media only screen and (min-width: 1440px) {
   .boxForWrappers {
-    margin-top: 153px;
-    margin-bottom: 240px;
+    margin-top: 11%;
+    margin-bottom: 21%;
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -21,8 +21,8 @@
 
 @media only screen and (min-width: 1920px) {
   .boxForWrappers {
-    margin-top: 108px;
-    margin-bottom: 247px;
+    margin-top: 10.58%;
+    margin-bottom: 24.21%;
   }
 }
 
@@ -33,9 +33,16 @@
   margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1024px) {
+  .wraperFormAuth {
+    margin-bottom: 54px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
   .wraperFormAuth {
     margin-right: 137px;
+    margin-bottom: 0;
   }
 }
 
@@ -80,7 +87,7 @@
 @media only screen and (min-width: 1920px) {
   .titleLogin {
     font-size: 48px;
-    margin-bottom: 56px;
+    margin-bottom: 39px;
   }
 }
 
@@ -97,13 +104,14 @@
   .registerText {
     font-size: 23px;
     line-height: 1.33333;
+    margin-bottom: 14px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .registerText {
     font-size: 16px;
-    margin-bottom: 9px;
+    margin-bottom: 15px;
   }
 }
 
@@ -169,7 +177,7 @@
   padding: 12px 16px;
   width: 320px;
   height: 48px;
-  font-family: 'Kyiv*Type Serif', sans-serif;
+  font-family: 'Kulim Park', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.7;
@@ -189,15 +197,19 @@
 
 @media only screen and (min-width: 1440px) {
   .inputStyles {
+    border: 1px solid #969696;
+    border-radius: 14px;
+    padding: 12px 16px;
     width: 380px;
     height: 46px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #969696;
   }
 }
 
 @media only screen and (min-width: 1920px) {
   .inputStyles {
-    border: 1px solid #969696;
-    border-radius: 14px;
     padding: 18px 16px;
     width: 426px;
     height: 63px;
@@ -220,19 +232,28 @@
 
 @media only screen and (min-width: 1440px) {
   .boxInputs {
-    gap: 36px;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .boxInputs {
+    gap: 26px;
+    margin-bottom: 26px;
   }
 }
 
 .boxNavToRegister {
   display: flex;
   flex-direction: column;
-  margin-bottom: 108px;
+  margin-bottom: 13.5%;
   margin-top: 45px;
 }
 
 @media only screen and (min-width: 1024px) {
   .boxNavToRegister {
+    margin-bottom: 12.6%;
     margin-top: 56px;
     flex-wrap: wrap;
     width: 776px;
@@ -262,6 +283,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+  margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -272,7 +294,7 @@
 
 @media only screen and (min-width: 1440px) {
   .boxCheckboxAndLink {
-    margin-bottom: 0;
+    margin-bottom: 26px;
     width: 320px;
   }
 }
@@ -280,6 +302,7 @@
 @media only screen and (min-width: 1920px) {
   .boxCheckboxAndLink {
     width: 426px;
+    margin-bottom: 30px;
   }
 }
 
@@ -407,6 +430,25 @@
   }
 }
 
+.tabletRectigleStyles {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .tabletRectigleStyles {
+    display: block;
+    height: 2px;
+    width: 776px;
+    background-color: #d9d9d9;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .tabletRectigleStyles {
+    display: none;
+  }
+}
+
 .titleLoginPageRegister {
   font-family: 'Kulim Park', sans-serif;
   font-weight: 700;
@@ -419,6 +461,7 @@
 @media only screen and (min-width: 1024px) {
   .titleLoginPageRegister {
     font-size: 47px;
+    margin-bottom: 40px;
   }
 }
 
@@ -429,11 +472,13 @@
     align-items: center;
     flex-wrap: nowrap;
     font-size: 36px;
+    margin-bottom: 30px;
   }
 }
 
 @media only screen and (min-width: 1920px) {
   .titleLoginPageRegister {
     font-size: 44px;
+    margin-bottom: 50px;
   }
 }
