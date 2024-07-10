@@ -119,6 +119,7 @@ export default function RegisterPage() {
         </form>
         <div className={styles.boxForImageRight}></div>
         <div className={styles.boxForImageBottom}></div>
+        <div className={styles.boxForImageBottomTablet}></div>
       </div>
       <Footer />
     </>

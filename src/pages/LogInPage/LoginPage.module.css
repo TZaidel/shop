@@ -8,17 +8,21 @@
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 1440px) {
   .boxForWrappers {
-    height: 100vh;
-  }
-}
-
-@media only screen and (min-width: 1100px) {
-  .boxForWrappers {
+    margin-top: 11%;
+    margin-bottom: 21%;
+    align-items: flex-start;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 56px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .boxForWrappers {
+    margin-top: 10.58%;
+    margin-bottom: 24.21%;
   }
 }
 
@@ -29,9 +33,16 @@
   margin-bottom: 30px;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1024px) {
+  .wraperFormAuth {
+    margin-bottom: 54px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
   .wraperFormAuth {
     margin-right: 137px;
+    margin-bottom: 0;
   }
 }
 
@@ -39,7 +50,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1440px) {
   .rectigleStyles {
     display: block;
     width: 1px;
@@ -59,10 +70,16 @@
   margin-bottom: 16px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .titleLogin {
+    font-size: 62px;
+    margin-bottom: 30px;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   .titleLogin {
     font-size: 36px;
-    margin-bottom: 30px;
     margin-top: 0;
   }
 }
@@ -70,7 +87,7 @@
 @media only screen and (min-width: 1920px) {
   .titleLogin {
     font-size: 48px;
-    margin-bottom: 56px;
+    margin-bottom: 39px;
   }
 }
 
@@ -83,10 +100,18 @@
   margin-bottom: 9px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .registerText {
+    font-size: 23px;
+    line-height: 1.33333;
+    margin-bottom: 14px;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   .registerText {
     font-size: 16px;
-    margin-bottom: 9px;
+    margin-bottom: 15px;
   }
 }
 
@@ -106,7 +131,7 @@
   padding: 12px 15px;
   width: 322px;
   height: 46px;
-  font-family: 'Kyiv*Type Serif', sans-serif;
+  font-family: 'Kulim Park', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.7;
@@ -115,8 +140,23 @@
   text-align: center;
 }
 
+@media only screen and (min-width: 1024px) {
+  .navLinkRegister {
+    border-radius: 15px;
+    padding: 24px 30px;
+    width: 776px;
+    height: 93px;
+    font-family: 'Kulim Park', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   .navLinkRegister {
+    border: 1px solid #c7031b;
+    border-radius: 10px;
+    padding: 16px 20px;
     width: 400px;
     height: 59px;
     font-size: 16px;
@@ -137,7 +177,7 @@
   padding: 12px 16px;
   width: 320px;
   height: 48px;
-  font-family: 'Kyiv*Type Serif', sans-serif;
+  font-family: 'Kulim Park', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.7;
@@ -145,17 +185,31 @@
   color: #969696;
 }
 
+@media only screen and (min-width: 1024px) {
+  .inputStyles {
+    border: 1.66px solid #969696;
+    border-radius: 23px;
+    padding: 19px 26px;
+    width: 776px;
+    height: 78px;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   .inputStyles {
+    border: 1px solid #969696;
+    border-radius: 14px;
+    padding: 12px 16px;
     width: 380px;
     height: 46px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #969696;
   }
 }
 
 @media only screen and (min-width: 1920px) {
   .inputStyles {
-    border: 1px solid #969696;
-    border-radius: 14px;
     padding: 18px 16px;
     width: 426px;
     height: 63px;
@@ -169,28 +223,57 @@
   margin-bottom: 6px;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1024px) {
   .boxInputs {
-    display: flex;
-    gap: 36px;
-    flex-direction: column;
+    gap: 24px;
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .boxInputs {
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .boxInputs {
+    gap: 26px;
+    margin-bottom: 26px;
   }
 }
 
 .boxNavToRegister {
   display: flex;
   flex-direction: column;
-  margin-bottom: 108px;
+  margin-bottom: 13.5%;
   margin-top: 45px;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1024px) {
   .boxNavToRegister {
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 12.6%;
+    margin-top: 56px;
     flex-wrap: wrap;
-    align-items: flex-start;
+    width: 776px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .boxNavToRegister {
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-wrap: nowrap;
+    width: 454px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .boxNavToRegister {
+    margin-top: 0;
+    flex-wrap: nowrap;
+    width: 639px;
   }
 }
 
@@ -200,11 +283,18 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  width: 320px;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .boxCheckboxAndLink {
+    margin-bottom: 60px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .boxCheckboxAndLink {
+    margin-bottom: 26px;
     width: 320px;
   }
 }
@@ -212,6 +302,7 @@
 @media only screen and (min-width: 1920px) {
   .boxCheckboxAndLink {
     width: 426px;
+    margin-bottom: 30px;
   }
 }
 
@@ -222,6 +313,12 @@
   font-size: 15px;
   line-height: 3.6;
   color: #c7031b;
+}
+
+@media only screen and (min-width: 1024px) {
+  .restorationLink {
+    font-size: 22px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -239,11 +336,11 @@
 }
 
 .buttonLogin {
-  font-family: 'Kyiv*Type Serif', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
+  font-family: 'Kulim Park', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
   line-height: 1.7;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #fff;
   background-color: rgba(192, 33, 33, 0.68);
   border-radius: 8px;
@@ -253,8 +350,21 @@
   border: none;
 }
 
+@media only screen and (min-width: 1024px) {
+  .buttonLogin {
+    border-radius: 16px;
+    padding: 25px 32px;
+    width: 776px;
+    height: 98px;
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: capitalize;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   .buttonLogin {
+    font-size: 16px;
     border-radius: 10px;
     padding: 16px 20px;
     width: 380px;
@@ -275,6 +385,18 @@
   font-size: 11px;
   line-height: 3.6;
   color: #131415;
+}
+
+@media only screen and (min-width: 1024px) {
+  .textRememberData {
+    width: 100%;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 3.6;
+    color: #131415;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -305,5 +427,58 @@
 @media only screen and (min-width: 768px) {
   .mobileRectigleStyles {
     display: none;
+  }
+}
+
+.tabletRectigleStyles {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .tabletRectigleStyles {
+    display: block;
+    height: 2px;
+    width: 776px;
+    background-color: #d9d9d9;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .tabletRectigleStyles {
+    display: none;
+  }
+}
+
+.titleLoginPageRegister {
+  font-family: 'Kulim Park', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #000;
+}
+
+@media only screen and (min-width: 1024px) {
+  .titleLoginPageRegister {
+    font-size: 47px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .titleLoginPageRegister {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .titleLoginPageRegister {
+    font-size: 44px;
+    margin-bottom: 50px;
   }
 }

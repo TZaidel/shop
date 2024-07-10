@@ -6,69 +6,65 @@
   height: 100%;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1440px) {
   .wraperRegisterPage {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 100px;
     justify-content: space-between;
-    height: 100%;
   }
 }
 
+@media only screen and (min-width: 1920px) {
+  .wraperRegisterPage {
+    display: flex;
+    flex-direction: row;
+    gap: 132px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* //////////////\\\\\\\\\\\\\\ */
+
 .boxForImageRight {
   content: url(/images/backgroundImageRegister/leftBackground.png);
+  display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  .boxForImageRight {
+    display: block;
+    width: 273px;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .boxForImageRight {
+    width: 364px;
+    height: auto;
+  }
 }
 
 .boxForImageLeft {
   content: url(/images/backgroundImageRegister/rightBackground.png);
-}
-
-@media only screen and (max-width: 1099px) {
-  .boxForImageLeft {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1100px) {
-  .boxForImageLeft {
-    width: 180px;
-  }
+  display: none;
 }
 
 @media only screen and (min-width: 1440px) {
   .boxForImageLeft {
+    display: block;
     width: 273px;
+    height: auto;
   }
 }
 
 @media only screen and (min-width: 1920px) {
   .boxForImageLeft {
     width: 364px;
-  }
-}
-
-@media only screen and (max-width: 1099px) {
-  .boxForImageRight {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1100px) {
-  .boxForImageRight {
-    width: 180px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .boxForImageRight {
-    width: 273px;
-  }
-}
-
-@media only screen and (min-width: 1920px) {
-  .boxForImageRight {
-    width: 364px;
+    height: auto;
   }
 }
 
@@ -83,6 +79,26 @@
   }
 }
 
+.boxForImageBottomTablet {
+  content: url(../../../public/images/backgroundImageRegister/bottomTabletImage.png);
+  width: 100%;
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .boxForImageBottomTablet {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .boxForImageBottomTablet {
+    display: none;
+  }
+}
+
+/* //////////////\\\\\\\\\\\\\\ */
+
 .titleregister {
   font-family: 'Kulim Park', sans-serif;
   font-weight: 600;
@@ -94,8 +110,18 @@
   margin-bottom: 18px;
 }
 
+@media only screen and (min-width: 1024px) {
+  .titleregister {
+    margin-top: 75px;
+    margin-bottom: 48px;
+    font-size: 64px;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   .titleregister {
+    margin-top: 0;
+    margin-bottom: 26px;
     font-size: 36px;
     margin-bottom: 26px;
   }
@@ -107,6 +133,8 @@
     margin-bottom: 34px;
   }
 }
+
+/* //////////////\\\\\\\\\\\\\\ */
 
 .wrapperForm {
   display: flex;
@@ -123,7 +151,13 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
+  .wrapperForm {
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
   .wrapperForm {
     align-items: center;
     justify-content: center;
@@ -132,12 +166,24 @@
   }
 }
 
+/* //////////////\\\\\\\\\\\\\\ */
+
 .inputsStyle {
   border: 0.74px solid #969696;
   border-radius: 10px;
   padding: 13px 11px;
   width: 310px;
   height: 47px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .inputsStyle {
+    border: 1.15px solid #969696;
+    border-radius: 15px;
+    padding: 21px 18px;
+    width: 647px;
+    height: 78px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -159,6 +205,8 @@
   }
 }
 
+/* //////////////\\\\\\\\\\\\\\ */
+
 .listInputsLeft {
   display: flex;
   gap: 15px;
@@ -167,21 +215,25 @@
   margin-bottom: 15px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .listInputsLeft {
-    margin-bottom: 0;
-    margin-right: 15px;
+    gap: 24px;
+    margin-bottom: 24px;
   }
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1440px) {
   .listInputsLeft {
-    display: flex;
     gap: 32px;
-    flex-direction: column;
-    list-style: none;
-    margin-right: 44px;
+    margin-right: 32px;
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .listInputsLeft {
+    gap: 32px;
+    margin-right: 44px;
   }
 }
 
@@ -192,15 +244,26 @@
   list-style: none;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1024px) {
   .listInputsRight {
-    display: flex;
+    gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .listInputsRight {
     gap: 32px;
-    flex-direction: column;
-    list-style: none;
+    margin-left: 32px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .listInputsRight {
     margin-left: 44px;
   }
 }
+
+/* //////////////\\\\\\\\\\\\\\ */
 
 .boxLabel {
   display: flex;
@@ -211,18 +274,33 @@
   margin-bottom: 29px;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1024px) {
   .boxLabel {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 416px;
-    height: 40px;
+    height: 58px;
+    width: 646px;
     margin-left: 0;
+    margin-top: 4px;
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .boxLabel {
     margin-top: 10px;
     margin-bottom: 0;
   }
 }
+
+@media only screen and (min-width: 1920px) {
+  .boxLabel {
+    margin-top: 16px;
+  }
+}
+
+/* //////////////\\\\\\\\\\\\\\ */
 
 .textagree {
   display: flex;
@@ -234,27 +312,27 @@
   font-size: 7px;
   line-height: 1.6;
   color: #131415;
-  width: 222px;
+  width: 100%;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1024px) {
   .textagree {
-    gap: 6px;
-    text-align: center;
-    font-size: 10px;
-    line-height: 4.05;
-    width: 392px;
+    flex-direction: row;
+    font-size: 16px;
+    line-height: 3.49473;
   }
 }
 
 @media only screen and (min-width: 1920px) {
   .textagree {
-    font-size: 11px;
+    font-size: 15px;
     line-height: 3.6;
     width: 616px;
     flex-direction: row;
   }
 }
+
+/* //////////////\\\\\\\\\\\\\\ */
 
 .registerButton {
   border-radius: 8px;
@@ -263,7 +341,7 @@
   height: 50px;
   border: none;
   background-color: rgba(192, 33, 33, 0.68);
-  font-family: 'Kyiv*Type Serif', sans-serif;
+  font-family: 'Kulim Park', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.7;
@@ -272,15 +350,15 @@
   margin-bottom: 58px;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1024px) {
   .registerButton {
-    border-radius: 7px;
-    padding: 12px 15px;
-    width: 436px;
-    height: 55px;
-    font-weight: 700;
-    font-size: 18px;
-    margin-bottom: 0;
+    border-radius: 10px;
+    padding: 16px 20px;
+    width: 648px;
+    height: 79px;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 92px;
   }
 }
 
@@ -308,6 +386,8 @@
   }
 }
 
+/* //////////////\\\\\\\\\\\\\\ */
+
 .boxLabelAndButton {
   display: flex;
   justify-content: center;
@@ -315,12 +395,6 @@
   flex-wrap: wrap;
   width: 100%;
   margin-top: 13px;
-}
-
-@media only screen and (min-width: 768px) {
-  .boxLabelAndButton {
-    align-items: center;
-  }
 }
 
 @media only screen and (min-width: 1100px) {
@@ -331,12 +405,26 @@
   }
 }
 
+/* //////////////\\\\\\\\\\\\\\ */
+
 .formStyles {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .formStyles {
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .formStyles {
+    align-items: center;
+  }
 }
 
 .checkBoxRegister {
