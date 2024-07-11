@@ -1,0 +1,58 @@
+.specialBox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+}
+
+.backDrop {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 998;
+}
+
+@media only screen and (min-width: 768px) {
+  .backDrop {
+    display: block;
+  }
+}
+
+.buttonClose {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  cursor: pointer;
+  width: 75px;
+  height: 40px;
+  border: 1.5px solid black;
+  border-radius: 7px;
+}
+
+.wrapperModal {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white-color);
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 998;
+}
+
+@media only screen and (min-width: 600px) {
+  .wrapperModal {
+    width: 378px;
+  }
+}
