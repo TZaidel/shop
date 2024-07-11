@@ -8,7 +8,19 @@
   border-bottom: 2px solid #d9d9d9;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1024px) {
+  .headerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 25.4px;
+    height: 120px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
   .headerContainer {
     display: flex;
     flex-direction: row;
@@ -23,6 +35,7 @@
 @media only screen and (min-width: 1920px) {
   .headerContainer {
     height: 132px;
+    padding: 0 60px;
   }
 }
 
@@ -50,30 +63,32 @@
 }
 
 .navList {
-  display: flex;
-  gap: 40px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-left: 120px;
+  display: none;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width: 1024px) {
   .navList {
-    display: none;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 85px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .navList {
-    gap: 30px;
+    margin-left: 120px;
+    gap: 28px;
   }
 }
 
 @media only screen and (min-width: 1920px) {
   .navList {
+    width: 481px;
     gap: 40px;
-    margin-left: 174px;
+    margin-left: 140px;
   }
 }
 
@@ -97,59 +112,111 @@
 }
 
 .listIcons {
+  display: none;
   width: 204px;
   height: 40px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (min-width: 1024px) {
   .listIcons {
-    display: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
   }
 }
 
 .itemIconSearch {
-  margin: 0 35px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 22px 0 0;
+}
+
+@media only screen and (min-width: 1440px) {
+  .itemIconSearch {
+    margin: 0 35px 0 0;
+  }
 }
 
 .itemIconUser {
-  margin: 0 0 0 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 22px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .itemIconUser {
+    margin: 0 0 0 38px;
+  }
 }
 
 .itemIconBasket {
-  margin: 0 0 0 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 18.4px;
 }
 
-.IconsToNav {
-  width: 30px;
-  height: 36px;
+@media only screen and (min-width: 1440px) {
+  .itemIconBasket {
+    margin: 0 0 0 33px;
+  }
+}
+
+.IconsToNavSearch {
+  width: 19px;
+  height: 23px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .IconsToNavSearch {
+    width: 26px;
+    height: 30px;
+  }
+}
+
+.IconsToNavPerson {
+  width: 22px;
+  height: 26px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .IconsToNavPerson {
+    width: 28px;
+    height: 30px;
+  }
+}
+
+.IconsToNavBasket {
+  width: 28px;
+  height: 23px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .IconsToNavBasket {
+    height: 30px;
+  }
+}
+
+.itemVector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .vector {
   width: 2px;
-  height: 40px;
+  height: 24px;
   background-color: #d9d9d9;
+}
+
+@media only screen and (min-width: 1440px) {
+  .vector {
+    height: 30px;
+  }
 }
 
 .active {
   color: var(--accent-color);
-}
-
-.burgerMenuButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background-color: transparent;
-  width: 36px;
-  padding: 0;
-}
-
-@media only screen and (min-width: 1101px) {
-  .burgerMenuButton {
-    display: none;
-  }
 }

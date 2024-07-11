@@ -1,10 +1,11 @@
 import clsx from 'clsx';
-import { IoMenu, IoSearchSharp } from 'react-icons/io5';
+import { IoSearchSharp } from 'react-icons/io5';
 import { GoPerson } from 'react-icons/go';
 import { BsBasket3 } from 'react-icons/bs';
 import { Link, NavLink } from 'react-router-dom';
 
 import styles from './Header.module.css';
+import BurgerComponent from '../BurgerComponent/BurgerComponent';
 
 export default function Header() {
   const linkClass = ({ isActive }) => {
@@ -33,26 +34,24 @@ export default function Header() {
         <ul className={styles.listIcons}>
           <li className={styles.itemIconSearch}>
             <Link to="/">
-              <IoSearchSharp className={styles.IconsToNav} />
+              <IoSearchSharp className={styles.IconsToNavSearch} />
             </Link>
           </li>
-          <li>
+          <li className={styles.itemVector}>
             <div className={styles.vector}></div>
           </li>
           <li className={styles.itemIconUser}>
             <Link to="/login">
-              <GoPerson className={styles.IconsToNav} />
+              <GoPerson className={styles.IconsToNavPerson} />
             </Link>
           </li>
           <li className={styles.itemIconBasket}>
             <Link to="/cart">
-              <BsBasket3 className={styles.IconsToNav} />
+              <BsBasket3 className={styles.IconsToNavBasket} />
             </Link>
           </li>
         </ul>
-        <button className={styles.burgerMenuButton}>
-          <IoMenu size="36px" className={styles.burgerMenuIcon} />
-        </button>
+        <BurgerComponent />
       </div>
     </section>
   );
