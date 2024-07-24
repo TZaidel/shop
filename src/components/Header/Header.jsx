@@ -25,9 +25,6 @@ export default function Header() {
           <NavLink to="/" className={linkClass}>
             ЗНИЖКИ
           </NavLink>
-          <NavLink to="/" className={linkClass}>
-            ТВОЇ БАЛИ
-          </NavLink>
         </nav>
       </div>
       <div>

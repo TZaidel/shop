@@ -70,6 +70,14 @@
   margin-bottom: 16px;
 }
 
+@media only screen and (min-width: 768px) {
+  .titleLogin {
+    margin-top: 100px;
+    margin-bottom: 23px;
+    font-size: 47px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .titleLogin {
     font-size: 62px;
@@ -98,6 +106,13 @@
   line-height: 2.7;
   color: #131415;
   margin-bottom: 9px;
+}
+
+@media only screen and (min-width: 768px) {
+  .registerText {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -138,6 +153,17 @@
   text-transform: uppercase;
   color: #000;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .navLinkRegister {
+    border-radius: 15px;
+    padding: 24px 30px;
+    width: 582px;
+    height: 70px;
+    font-weight: 600;
+    font-size: 18.52px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -183,6 +209,16 @@
   line-height: 1.7;
   text-transform: capitalize;
   color: #969696;
+}
+
+@media only screen and (min-width: 768px) {
+  .inputStyles {
+    border: 1.25px solid #969696;
+    border-radius: 17.44px;
+    padding: 15px 20px;
+    width: 582px;
+    height: 59px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -316,6 +352,12 @@
   color: #c7031b;
 }
 
+@media only screen and (min-width: 768px) {
+  .restorationLink {
+    font-size: 16.53px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .restorationLink {
     font-size: 22px;
@@ -351,15 +393,23 @@
   border: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .buttonLogin {
+    border-radius: 12px;
+    padding: 20px 25px;
+    width: 582px;
+    height: 74px;
+    font-size: 20px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .buttonLogin {
     border-radius: 16px;
     padding: 25px 32px;
     width: 776px;
     height: 98px;
-    font-weight: 600;
     font-size: 25px;
-    text-transform: capitalize;
   }
 }
 
@@ -388,15 +438,18 @@
   color: #131415;
 }
 
+@media only screen and (min-width: 768px) {
+  .textRememberData {
+    width: 100%;
+    margin-left: 10px;
+    font-size: 16.53px;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .textRememberData {
     width: 100%;
     margin-left: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 3.6;
-    color: #131415;
   }
 }
 
@@ -426,6 +479,12 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .mobileRectigleStyles {
+    width: 582px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
   .mobileRectigleStyles {
     display: none;
   }
@@ -457,6 +516,13 @@
   line-height: 1.2;
   text-transform: uppercase;
   color: #000;
+}
+
+@media only screen and (min-width: 768px) {
+  .titleLoginPageRegister {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
