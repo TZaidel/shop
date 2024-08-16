@@ -15,9 +15,9 @@ export default function ProductList({ gender }) {
     dispatch(fetchProducts());
   }, [dispatch]);
 
-  const filteredItems = items.filter(
-    item => item.gender === gender || item.gender === 'unisex'
-  );
+  const filteredItems = items.filter(item => {
+    return item.gender === gender || item.gender === 'unisex';
+  });
 
   return (
     <section className={css.container}>
