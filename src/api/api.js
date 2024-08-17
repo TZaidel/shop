@@ -9,7 +9,7 @@ export const apiProduct = axios.create({
 export const apiAuth = axios.create({
   // baseURL: 'http://176.37.226.184:8009',
   baseURL: 'https://connections-api.goit.global/',
-  withCredentials: true,
+  withCredentials: false,
 });
 
 export const setToken = token => {
