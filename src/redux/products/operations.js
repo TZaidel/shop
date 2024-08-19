@@ -1,13 +1,20 @@
-import axios from 'axios'
-import { createAsyncThunk } from '@reduxjs/toolkit'
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import { apiProduct } from '../../api/api';
 
-axios.defaults.baseURL = 'http://176.37.226.184:8009'
-
-export const fetchProducts = createAsyncThunk('items/fetch', async (_, thunkAPI) => {
-  try {
-    const response = await axios.get('/api/products')
-    return response.data.data
-  } catch (error) {
-    return thunkAPI.rejectWithValue(error.message)
+export const fetchProducts = createAsyncThunk(
+  '/api/products/t-shirts',
+  async (page = 1, thunkAPI) => {
+    const params = new URLSearchParams({
+      page,
+      limit: 40,
+    });
+    try {
+      const response = await apiProduct.get('/api/products/t-shirts/', {
+        params,
+      });
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.message);
+    }
   }
-})
+);

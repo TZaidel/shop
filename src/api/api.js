@@ -1,13 +1,21 @@
 import axios from 'axios';
-export const api = axios.create({
-  baseURL: 'http://176.37.226.184:8009',
-  withCredentials: true,
+export const apiProduct = axios.create({
+  baseURL: 'https://66bf1a1242533c4031450ec8.mockapi.io',
+  withCredentials: false,
+  headers: { 'content-type': 'application/json' },
+  method: 'GET',
+});
+
+export const apiAuth = axios.create({
+  // baseURL: 'http://176.37.226.184:8009',
+  baseURL: 'https://connections-api.goit.global/',
+  withCredentials: false,
 });
 
 export const setToken = token => {
-  api.defaults.headers.common.Authorization = `Bearer ${token}`;
+  apiAuth.defaults.headers.common.Authorization = `Bearer ${token}`;
 };
 
 export const clearToken = () => {
-  api.defaults.headers.common.Authorization = ``;
+  apiAuth.defaults.headers.common.Authorization = ``;
 };

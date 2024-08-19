@@ -1,14 +1,11 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { clearToken, setToken } from '../../api/api';
-import axios from 'axios';
-
-axios.defaults.baseURL = 'http://176.37.226.184:8009';
+import { apiAuth, clearToken, setToken } from '../../api/api';
 
 export const registerThunk = createAsyncThunk(
   'register',
   async (credentials, thunkAPI) => {
     try {
-      await axios.post('/api/register', credentials);
+      await apiAuth.post('users/signup', credentials);
     } catch (error) {
       if (error.request.status === 409) {
         return thunkAPI.rejectWithValue('Email is already in use.');
@@ -23,7 +20,7 @@ export const loginThunk = createAsyncThunk(
   'login',
   async (credentials, thunkAPI) => {
     try {
-      const response = await axios.post('/api/login', credentials);
+      const response = await apiAuth.post('/users/login', credentials);
       setToken(response.data.accessToken);
       return response.data;
     } catch (error) {
@@ -37,21 +34,35 @@ export const loginThunk = createAsyncThunk(
   }
 );
 
-export const refreshThunk = createAsyncThunk('refresh', async (_, thunkAPI) => {
-  const { auth } = thunkAPI.getState();
+// export const refreshThunk = createAsyncThunk('refresh', async (_, thunkAPI) => {
+//   const { auth } = thunkAPI.getState();
 
-  const refreshToken = auth.refreshToken;
+//   const refreshToken = auth.refreshToken;
 
-  if (!refreshToken) {
-    return thunkAPI.rejectWithValue('No refresh token.');
+//   if (!refreshToken) {
+//     return thunkAPI.rejectWithValue('No refresh token.');
+//   }
+
+//   try {
+//     const { data } = await axios.post('/api/refresh', { refreshToken });
+//     setToken(data.accessToken);
+//     return data;
+//   } catch (error) {
+//     return thunkAPI.rejectWithValue(error.message);
+//   }
+// });
+
+export const refreshThunk = createAsyncThunk('refresh', async (_, thunkApi) => {
+  const savedToken = thunkApi.getState().auth.token;
+  if (!savedToken) {
+    return thunkApi.rejectWithValue('Token is not exist');
   }
-
   try {
-    const { data } = await axios.post('/api/refresh', { refreshToken });
-    setToken(data.accessToken);
+    setToken(savedToken);
+    const { data } = await apiAuth.get('users/current');
     return data;
   } catch (error) {
-    return thunkAPI.rejectWithValue(error.message);
+    return thunkApi.rejectWithValue(error.message);
   }
 });
 
@@ -59,7 +70,7 @@ export const logoutThunk = createAsyncThunk(
   'logout',
   async (refreshToken, thunkAPI) => {
     try {
-      await axios.post('/auth/logout', refreshToken);
+      await apiAuth.post('/users/logout', refreshToken);
       clearToken();
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
