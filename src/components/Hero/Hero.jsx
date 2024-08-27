@@ -8,7 +8,7 @@ export default function Hero() {
           <p className={`${styles.title} ${styles.womanTitle}`}>ЖІНКАМ</p>
           <img
             className={styles.image}
-            srcSet="/public/images/hero/forWomen.jpg"
+            srcSet="/images/hero/forWomen.jpg"
             alt="Ukrainian woman in folk dress"
           />
         </li>
@@ -16,7 +16,7 @@ export default function Hero() {
           <p className={`${styles.title} ${styles.menTitle}`}>ЧОЛОВІКАМ</p>
           <img
             className={styles.image}
-            srcSet="/public/images/hero/forMan.jpg"
+            srcSet="/images/hero/forMan.jpg"
             alt="Ukrainian man in folk dress"
           />
         </li>
