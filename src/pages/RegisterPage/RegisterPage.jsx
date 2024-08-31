@@ -68,8 +68,8 @@ export default function RegisterPage() {
             <ul className={styles.listInputsRight}>
               <li>
                 <input
-                  {...register('tel')}
-                  type="tel"
+                  {...register('phone')}
+                  type="phone"
                   required
                   className={styles.inputsStyle}
                   placeholder="мобільний телефон *"

@@ -5,7 +5,7 @@ export const registerThunk = createAsyncThunk(
   'register',
   async (credentials, thunkAPI) => {
     try {
-      await apiAuth.post('users/signup', credentials);
+      await apiAuth.post('/register', credentials);
     } catch (error) {
       if (error.request.status === 409) {
         return thunkAPI.rejectWithValue('Email is already in use.');
@@ -20,7 +20,7 @@ export const loginThunk = createAsyncThunk(
   'login',
   async (credentials, thunkAPI) => {
     try {
-      const response = await apiAuth.post('/users/login', credentials);
+      const response = await apiAuth.post('/login', credentials);
       setToken(response.data.accessToken);
       return response.data;
     } catch (error) {

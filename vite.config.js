@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://66bf1a1242533c4031450ec8.mockapi.io',
+        target: 'http://70.34.242.75/api',
         changeOrigin: true,
         secure: false,
       },

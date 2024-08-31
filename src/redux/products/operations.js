@@ -2,14 +2,14 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import { apiProduct } from '../../api/api';
 
 export const fetchProducts = createAsyncThunk(
-  '/api/products/t-shirts',
+  '/api/products',
   async (page = 1, thunkAPI) => {
     const params = new URLSearchParams({
       page,
       limit: 40,
     });
     try {
-      const response = await apiProduct.get('/api/products/t-shirts/', {
+      const response = await apiProduct.get('/api/products', {
         params,
       });
       return response.data;
