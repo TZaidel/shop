@@ -27,7 +27,7 @@ export default function Filter() {
     <div className={styles.wrapperSection}>
       <div className={styles.boxSelects}>
         <div className={styles.boxSizeList}>
-          <h3 className={styles.titleSelect}>РОЗМІР</h3>
+          <h3 className={styles.titleSelectSize}>РОЗМІР</h3>
           <button
             className={clsx({
               [styles.buttonDropDown]: true,
@@ -66,7 +66,9 @@ export default function Filter() {
           >
             <GoChevronDown className={styles.dropIcon} />
           </button>
-          <ul className={isOpenColors ? styles.listDropColors : styles.listNone}>
+          <ul
+            className={isOpenColors ? styles.listDropColors : styles.listNone}
+          >
             <li className={styles.itemColors}>
               <p className={styles.elementItem}>Білий</p>
             </li>
@@ -93,6 +95,7 @@ export default function Filter() {
             max="10000"
             step="1"
             onChange={handleChange}
+            className={styles.rangeInput}
           ></input>
           <span>{value}</span>
         </div>

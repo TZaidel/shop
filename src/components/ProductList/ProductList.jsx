@@ -15,16 +15,18 @@ export default function ProductList({ gender }) {
     dispatch(fetchProducts());
   }, [dispatch]);
 
-  // const filteredItems = items.filter(item => {
-  //   return item.gender === gender || item.gender === 'unisex';
-  // });
+  const filteredItems = Array.isArray(items)
+    ? items.filter(item => {
+        return item.gender === gender || item.gender === 'unisex';
+      })
+    : [];
 
   return (
     <section className={css.container}>
       <ul className={styles.list}>
-        {/* {filteredItems.map(item => (
+        {filteredItems.map(item => (
           <ProductItem key={item.id} item={item} />
-        ))} */}
+        ))}
       </ul>
     </section>
   );
