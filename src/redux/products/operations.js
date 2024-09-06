@@ -9,7 +9,7 @@ export const fetchProducts = createAsyncThunk(
       limit: 40,
     });
     try {
-      const response = await apiProduct.get('/api/products', {
+      const response = await apiProduct.get('/products', {
         params,
       });
       return response.data;
