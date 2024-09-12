@@ -4,7 +4,7 @@ import { addToCart } from '../../redux/cart/cartSlice.js';
 import styles from './ProductItem.module.css';
 
 export default function ProductItem({ item }) {
-  const { id, title, price, thumbnail, avatar } = item;
+  const { id, name, price, thumbnail, Images_to_product } = item;
 
   const dispatch = useDispatch();
 
@@ -17,11 +17,18 @@ export default function ProductItem({ item }) {
       <svg width="16" height="16" className={styles.iconLike}>
         <use xlinkHref={`${sprite}#icon-like`}></use>
       </svg>
-      <img src={avatar} />
 
+      <div className={styles.imgContainer}>
+        <img
+          width="150px"
+          height="300px"
+          src={Images_to_product[0].Url_to_photo}
+          className={styles.image}
+        />
+      </div>
       <div className={styles.descriptionWrap}>
         <div>
-          <h2 className={styles.title}>{title}</h2>
+          <h2 className={styles.title}>{name}</h2>
           <p className={styles.price}>{price}₴</p>
         </div>
         <button onClick={handleAdd} className={styles.addBtn}>

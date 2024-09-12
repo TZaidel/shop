@@ -12,7 +12,7 @@ export const fetchProducts = createAsyncThunk(
       const response = await apiProduct.get('/products', {
         params,
       });
-      return response.data;
+      return response.data.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
     }

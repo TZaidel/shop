@@ -19,12 +19,17 @@
   fill: var(--accent-color);
 }
 
-/* .image {
+.imgContainer {
+  width: 150px;
+  height: 300px;
+}
+.image {
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
   object-position: top;
   z-index: 1;
-} */
+}
 
 .descriptionWrap {
   display: flex;

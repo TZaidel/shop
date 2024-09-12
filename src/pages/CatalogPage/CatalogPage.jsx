@@ -6,7 +6,7 @@ import Filter from '../../components/Filter/Filter.jsx';
 
 export default function CatalogPage() {
   const { gender } = useParams();
-
+console.log(gender)
   return (
     <div>
       <Header />
