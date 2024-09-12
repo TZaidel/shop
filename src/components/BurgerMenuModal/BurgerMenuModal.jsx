@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { BsBasket3 } from 'react-icons/bs';
 import { GoPerson } from 'react-icons/go';
 import { IoClose, IoSearchSharp } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 
 const BurgerMenuModal = ({ isOpened, onClose }) => {
   if (!isOpened) return null;
@@ -24,24 +25,24 @@ const BurgerMenuModal = ({ isOpened, onClose }) => {
 
           <ul className={styles.listBurgerMenu}>
             <li className={styles.itemBurgerMenu}>
-              <p>ЖІНКАМ</p>
+              <Link to="/catalog/female">ЖІНКАМ</Link>
             </li>
             <li className={styles.itemBurgerMenu}>
-              <p>ЧОЛОВІКАМ</p>
+              <Link to="/catalog/male">ЧОЛОВІКАМ</Link>
             </li>
             <li className={styles.itemBurgerMenu}>
-              <p>ЗНИЖКИ</p>
+              <Link to="/">ЗНИЖКИ</Link>
             </li>
             <li className={styles.itemBurgerMenu}>
-              <p>ПОШУК</p>
+              <Link to="/">ПОШУК</Link>
               <IoSearchSharp className={styles.IconsToNavSearch} />
             </li>
             <li className={styles.itemBurgerMenu}>
-              <p>ПРОФІЛЬ</p>
+              <Link to="/login">ПРОФІЛЬ</Link>
               <GoPerson className={styles.IconsToNavPerson} />
             </li>
             <li className={styles.itemBurgerMenuBasket}>
-              <p>КОШИК</p>
+              <Link to="/cart">КОШИК</Link>
               <BsBasket3 className={styles.IconsToNavBasket} />
             </li>
           </ul>

@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <section className={styles.headerContainer}>
       <div className={styles.wrapperForNav}>
-        <h1 className={styles.logo}>UA TRADITIONS</h1>
+        <Link to="/" className={styles.logo}>UA TRADITIONS</Link>
         <nav className={styles.navList}>
           <NavLink to="/catalog/female" className={linkClass}>
             ЖІНКАМ
