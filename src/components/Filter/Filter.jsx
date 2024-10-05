@@ -39,19 +39,29 @@ export default function Filter() {
           </button>
           <ul className={isOpenSize ? styles.listDropSize : styles.listNone}>
             <li className={styles.itemSize}>
-              <p className={styles.elementItem}>XS</p>
+              <button className={styles.buttonDropList}>
+                <p className={styles.elementItem}>XS</p>
+              </button>
             </li>
             <li className={styles.itemSize}>
-              <p className={styles.elementItem}>S</p>
+              <button className={styles.buttonDropList}>
+                <p className={styles.elementItem}>S</p>
+              </button>
             </li>
             <li className={styles.itemSize}>
-              <p className={styles.elementItem}>M</p>
+              <button className={styles.buttonDropList}>
+                <p className={styles.elementItem}>M</p>
+              </button>
             </li>
             <li className={styles.itemSize}>
-              <p className={styles.elementItem}>L</p>
+              <button className={styles.buttonDropList}>
+                <p className={styles.elementItem}>L</p>
+              </button>
             </li>
             <li className={styles.itemSize}>
-              <p className={styles.elementItem}>XL</p>
+              <button className={styles.buttonDropList}>
+                <p className={styles.elementItem}>XL</p>
+              </button>
             </li>
           </ul>
         </div>
@@ -70,19 +80,29 @@ export default function Filter() {
             className={isOpenColors ? styles.listDropColors : styles.listNone}
           >
             <li className={styles.itemColors}>
-              <p className={styles.elementItem}>Білий</p>
+              <button className={styles.buttonDropList}>
+                <p className={styles.elementItem}>Білий</p>
+              </button>
             </li>
             <li className={styles.itemColors}>
-              <p className={styles.elementItem}>Чорний</p>
+              <button className={styles.buttonDropList}>
+                <p className={styles.elementItem}>Чорний</p>
+              </button>
             </li>
             <li className={styles.itemColors}>
-              <p className={styles.elementItem}>Синій</p>
+              <button className={styles.buttonDropList}>
+                <p className={styles.elementItem}>Синій</p>
+              </button>
             </li>
             <li className={styles.itemColors}>
-              <p className={styles.elementItem}>Червоний</p>
+              <button className={styles.buttonDropList}>
+                <p className={styles.elementItem}>Червоний</p>
+              </button>
             </li>
             <li className={styles.itemColors}>
-              <p className={styles.elementItem}>Сірий</p>
+              <button className={styles.buttonDropList}>
+                <p className={styles.elementItem}>Сірий</p>
+              </button>
             </li>
           </ul>
         </div>
